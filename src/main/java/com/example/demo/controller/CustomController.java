@@ -12,6 +12,7 @@ public class CustomController {
 	@PostMapping("/home")
 	public ResponseEntity<String> getHook(@RequestBody String msg) {
 		System.out.println("CustomController.getHook()" + msg);
+		System.out.println("Hello world");
 		return new ResponseEntity<String>(msg, HttpStatus.OK);
 	}
 
